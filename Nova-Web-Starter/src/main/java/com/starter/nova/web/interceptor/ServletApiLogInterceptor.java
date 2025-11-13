@@ -202,7 +202,7 @@ public class ServletApiLogInterceptor implements MethodInterceptor, Ordered {
      * 业务异常输出,不需要继承异常，输出的时候不需要堆栈和调用链的信息（过多数据的数据阿里云无法读取json的字段）
      */
     @Data
-    class BusinessExceptionOutput {
+    static class BusinessExceptionOutput {
         private Integer code;
         private String message;
         private Object[] args;
