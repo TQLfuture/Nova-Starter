@@ -1,4 +1,4 @@
-package com.starter.nova.mybatis.util;
+package com.starter.nova.mybatis.utils.m;
 
 import com.baomidou.mybatisplus.annotation.IEnum;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;

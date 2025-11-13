@@ -2,7 +2,7 @@ package com.starter.nova.mybatis.interceptor;
 
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.starter.nova.mybatis.model.pojo.SqlExecutionInfo;
-import com.starter.nova.mybatis.util.MybatisParameterResolver;
+import com.starter.nova.mybatis.utils.m.MybatisParameterResolver;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.mapping.MappedStatement;
 

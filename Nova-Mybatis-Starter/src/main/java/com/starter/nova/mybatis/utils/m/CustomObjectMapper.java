@@ -1,4 +1,4 @@
-package com.starter.nova.mybatis.util;
+package com.starter.nova.mybatis.utils.m;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;

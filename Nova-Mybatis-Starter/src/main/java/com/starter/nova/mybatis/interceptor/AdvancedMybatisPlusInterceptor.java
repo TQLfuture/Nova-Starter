@@ -10,7 +10,7 @@ import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerIntercept
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.starter.nova.mybatis.model.pojo.SqlExecutionInfo;
-import com.starter.nova.mybatis.util.CustomObjectMapper;
+import com.starter.nova.mybatis.utils.m.CustomObjectMapper;
 import org.apache.ibatis.cache.CacheKey;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.executor.statement.StatementHandler;
