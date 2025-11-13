@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>tt.nova</groupId>
-    <artifactId>Nova-Starter</artifactId>
+    <artifactId>nova-starter</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
         <module>nova-mybatis-starter</module>
         <module>nova-redis-starter</module>
-        <module>nova-common</module>
+        <module>nova-starter-common</module>
         <module>nova-web-starter</module>
         <module>nova-pay-stater</module>
     </modules>

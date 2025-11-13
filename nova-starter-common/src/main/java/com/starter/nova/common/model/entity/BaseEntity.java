@@ -1,4 +1,4 @@
-package com.starter.nova.mybatis.model.entity;
+package com.starter.nova.common.model.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;

@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>tt.nova</groupId>
-        <artifactId>Nova-Starter</artifactId>
+        <artifactId>nova-starter</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>nova-web-starter</artifactId>
-    <name>Nova-Web-Starter</name>
+    <name>nova-web-starter</name>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -31,11 +31,13 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
+
         <dependency>
             <groupId>tt.nova</groupId>
-            <artifactId>Nova-Common</artifactId>
+            <artifactId>nova-starter-common</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+
     </dependencies>
 </project>

@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>tt.nova</groupId>
-        <artifactId>Nova-Starter</artifactId>
+        <artifactId>nova-starter</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>Nova-Common</artifactId>
-    <name>Nova-Common</name>
+    <artifactId>nova-starter-common</artifactId>
+    <name>nova-starter-common</name>
     <packaging>jar</packaging>
     <dependencies>
 
@@ -27,9 +27,15 @@
             <artifactId>apm-toolkit-trace</artifactId>
             <version>${skywalking.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-annotation</artifactId>
         </dependency>
 
     </dependencies>
