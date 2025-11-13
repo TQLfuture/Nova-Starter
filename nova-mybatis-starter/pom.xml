@@ -10,6 +10,7 @@
     </parent>
 
     <artifactId>Nova-Mybatis-Starter</artifactId>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -74,8 +75,6 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
-
-
 
 
     </dependencies>

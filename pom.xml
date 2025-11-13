@@ -9,11 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>Nova-Mybatis-Starter</module>
-        <module>Nova-Redis-Starter</module>
-        <module>Nova-Common</module>
-        <module>Nova-Web-Starter</module>
-        <module>Nova-Pay-Stater</module>
+        <module>nova-mybatis-starter</module>
+        <module>nova-redis-starter</module>
+        <module>nova-common</module>
+        <module>nova-web-starter</module>
+        <module>nova-pay-stater</module>
     </modules>
 
     <properties>

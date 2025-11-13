@@ -6,6 +6,6 @@
         <artifactId>Nova-Starter</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>Nova-Pay-Stater</artifactId>
+    <artifactId>nova-pay-stater</artifactId>
     <name>Nova-Pay-Stater</name>
 </project>

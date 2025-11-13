@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerIntercept
 import com.starter.nova.mybatis.interceptor.AdvancedMybatisPlusInterceptor;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -16,6 +17,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @AutoConfiguration
+@ComponentScan("com.starter.nova.mybatis")
 public class NovaMybatisStarterAutoConfiguration {
 
     @Bean
