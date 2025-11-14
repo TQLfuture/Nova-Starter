@@ -6,8 +6,8 @@
         <artifactId>nova-starter</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>nova-starter-common</artifactId>
-    <name>nova-starter-common</name>
+    <artifactId>nova-common-starter</artifactId>
+    <name>nova-common-starter</name>
     <packaging>jar</packaging>
     <dependencies>
 

@@ -11,7 +11,7 @@
     <modules>
         <module>nova-mybatis-starter</module>
         <module>nova-redis-starter</module>
-        <module>nova-starter-common</module>
+        <module>nova-common-starter</module>
         <module>nova-web-starter</module>
         <module>nova-pay-stater</module>
     </modules>
@@ -27,6 +27,7 @@
         <redission.version>3.24.0</redission.version>
         <skywalking.version>9.1.0</skywalking.version>
         <fastjson2.version>2.0.59</fastjson2.version>
+        <mysql.version>8.2.0</mysql.version>
     </properties>
 
     <dependencyManagement>
