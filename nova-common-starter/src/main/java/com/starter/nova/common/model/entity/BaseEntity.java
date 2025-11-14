@@ -2,6 +2,7 @@ package com.starter.nova.common.model.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
+import lombok.experimental.FieldNameConstants;
 
 import java.time.LocalDateTime;
 
@@ -12,6 +13,7 @@ import java.time.LocalDateTime;
  * @desc:
  */
 @Data
+@FieldNameConstants
 public class BaseEntity {
 
     @TableId(type = IdType.ASSIGN_ID)

@@ -1,6 +1,7 @@
 package com.starter.nova.mybatis.handler;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
+import com.starter.nova.common.model.entity.BaseEntity;
 import org.apache.ibatis.reflection.MetaObject;
 
 import java.time.LocalDateTime;
@@ -18,13 +19,13 @@ public class CustomMetaObjectHandler implements MetaObjectHandler {
 
     @Override
     public void insertFill(MetaObject metaObject) {
-        this.strictInsertFill(metaObject, "creatorId", Long.class, 0L);
-        this.strictInsertFill(metaObject, "creator", String.class, "UNKNOWN");
-        this.strictInsertFill(metaObject, "createTime", LocalDateTime.class, LocalDateTime.now());
-        this.strictInsertFill(metaObject, "deleteFlag", Integer.class, 0);
-        Object testFlag = this.getFieldValByName("testFlag", metaObject);
+        this.strictInsertFill(metaObject, BaseEntity.Fields.creatorId, Long.class, 0L);
+        this.strictInsertFill(metaObject, BaseEntity.Fields.creator, String.class, "UNKNOWN");
+        this.strictInsertFill(metaObject, BaseEntity.Fields.createTime, LocalDateTime.class, LocalDateTime.now());
+        this.strictInsertFill(metaObject, BaseEntity.Fields.deleteFlag, Integer.class, 0);
+        Object testFlag = this.getFieldValByName(BaseEntity.Fields.testFlag, metaObject);
         if (testFlag == null) {
-            this.strictInsertFill(metaObject, "testFlag", Integer.class, 0);
+            this.strictInsertFill(metaObject, BaseEntity.Fields.testFlag, Integer.class, 0);
         }
         // 更新字段
         this.updateFill(metaObject);
@@ -32,9 +33,9 @@ public class CustomMetaObjectHandler implements MetaObjectHandler {
 
     @Override
     public void updateFill(MetaObject metaObject) {
-        this.strictUpdateFill(metaObject, "modifierId", Long.class, 0L);
-        this.strictUpdateFill(metaObject, "modifier", String.class, "UNKNOWN");
-        this.strictUpdateFill(metaObject, "updateTime", LocalDateTime.class, LocalDateTime.now());
+        this.strictUpdateFill(metaObject, BaseEntity.Fields.modifierId, Long.class, 0L);
+        this.strictUpdateFill(metaObject, BaseEntity.Fields.modifier, String.class, "UNKNOWN");
+        this.strictUpdateFill(metaObject, BaseEntity.Fields.updateTime, LocalDateTime.class, LocalDateTime.now());
     }
 
     @Override
