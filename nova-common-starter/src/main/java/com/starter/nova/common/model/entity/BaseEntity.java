@@ -47,4 +47,8 @@ public class BaseEntity {
     @TableField(fill = FieldFill.INSERT_UPDATE)
     protected LocalDateTime updateTime;
 
+    /**
+     * 租户ID
+     */
+    protected Long tenantId;
 }

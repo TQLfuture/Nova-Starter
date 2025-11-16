@@ -1,6 +1,6 @@
 package com.starter.nova.common.model;
 
-import com.starter.nova.common.enums.HttpStatusCodeEnum;
+import com.starter.nova.common.code.*;
 import lombok.Data;
 import org.apache.skywalking.apm.toolkit.trace.TraceContext;
 import org.slf4j.MDC;
@@ -60,17 +60,54 @@ public class BaseResult<T> implements Serializable {
 
     public BaseResult(int code, String desc, T data) {
         this.code = code;
-        this.success = code == HttpStatusCodeEnum.OK.getCode();
+        this.success = code == Success.SUCCESS.getCode();
         this.desc = desc;
         this.data = data;
         this.traceId = resolveTraceId();
     }
 
+    public static <T> BaseResult<T> success() {
+        return new BaseResult<>(Success.SUCCESS.getCode(), Success.SUCCESS.getMessage(), null);
+    }
+
+    public static <T> BaseResult<T> success(T data) {
+        return new BaseResult<>(Success.SUCCESS.getCode(), Success.SUCCESS.getMessage(), data);
+    }
+
+    public static <T> BaseResult<T> success(T data, String desc) {
+        return new BaseResult<>(Success.SUCCESS.getCode(), desc, data);
+    }
+
     public static <T> BaseResult<T> error() {
-        return new BaseResult<>(HttpStatusCodeEnum.BAD_REQUEST.getCode(), HttpStatusCodeEnum.BAD_REQUEST.getDesc(), null);
+        return new BaseResult<>(BadRequest.BAD_REQUEST.getCode(), BadRequest.BAD_REQUEST.getMessage(), null);
     }
 
     public static <T> BaseResult<T> error(String desc) {
-        return new BaseResult<>(HttpStatusCodeEnum.BAD_REQUEST.getCode(), desc, null);
+        return new BaseResult<>(BadRequest.BAD_REQUEST.getCode(), desc, null);
+    }
+
+
+    public static <T> BaseResult<T> unauthenticated() {
+        return new BaseResult<>(Unauthenticated.UNAUTHENTICATED.getCode(), Unauthenticated.UNAUTHENTICATED.getMessage(), null);
+    }
+
+    public static <T> BaseResult<T> unauthenticated(String desc) {
+        return new BaseResult<>(Unauthenticated.UNAUTHENTICATED.getCode(), desc, null);
+    }
+
+    public static <T> BaseResult<T> unauthorized() {
+        return new BaseResult<>(Unauthorized.UNAUTHORIZED.getCode(), Unauthorized.UNAUTHORIZED.getMessage(), null);
+    }
+
+    public static <T> BaseResult<T> unauthorized(String desc) {
+        return new BaseResult<>(Unauthorized.UNAUTHORIZED.getCode(), desc, null);
+    }
+
+    public static <T> BaseResult<T> serverError() {
+        return new BaseResult<>(InternalServerError.INTERNAL_SERVER_ERROR.getCode(), InternalServerError.INTERNAL_SERVER_ERROR.getMessage(), null);
+    }
+
+    public static <T> BaseResult<T> serverError(String desc) {
+        return new BaseResult<>(InternalServerError.INTERNAL_SERVER_ERROR.getCode(), desc, null);
     }
 }

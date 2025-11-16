@@ -1,5 +1,6 @@
 package com.starter.nova.common.exception;
 
+import com.starter.nova.common.code.AbstractStatusCode;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -45,4 +46,13 @@ public class BusinessException extends RuntimeException {
         this.code = code;
         this.message = message;
     }
+
+    public BusinessException(AbstractStatusCode status, Throwable cause) {
+        this(status.getCode(), status.getMessage(), cause);
+    }
+
+    public BusinessException(AbstractStatusCode status) {
+        this(status.getCode(), status.getMessage(), status.getMessage());
+    }
+
 }
