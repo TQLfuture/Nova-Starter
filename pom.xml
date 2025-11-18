@@ -14,6 +14,7 @@
         <module>nova-common-starter</module>
         <module>nova-web-starter</module>
         <module>nova-pay-stater</module>
+        <module>nova-storage-stater</module>
     </modules>
 
     <properties>
