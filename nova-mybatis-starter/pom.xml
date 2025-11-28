@@ -10,6 +10,7 @@
     </parent>
 
     <artifactId>nova-mybatis-starter</artifactId>
+    <name>nova-mybatis-starter</name>
     <packaging>jar</packaging>
 
     <properties>
@@ -36,17 +37,16 @@
             <artifactId>mybatis-plus-extension</artifactId>
         </dependency>
 
-        <!-- 新增：MySQL 驱动 -->
+<!--        &lt;!&ndash; 新增：MySQL 驱动 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.mysql</groupId>-->
+<!--            <artifactId>mysql-connector-j</artifactId>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
-            <version>${mysql.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter-test</artifactId>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
         </dependency>
 
         <dependency>
